@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="564.0" prefWidth="724.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.softwareproject.Quiz.CSS215">
+    <children>
+        <ImageView fitHeight="571.0" fitWidth="572.0" layoutX="152.0" layoutY="-3.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@img/ph1.png" />
+            </image>
+        </ImageView>
+        <AnchorPane prefHeight="90.0" prefWidth="724.0" style="-fx-background-color: #fff;">
+            <effect>
+                <DropShadow />
+            </effect>
+            <children>
+                <Text layoutX="350.0" layoutY="50.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Quiz Programming">
+                    <font>
+                        <Font name="Comic Sans MS Bold" size="18.0" />
+                    </font></Text>
+            </children>
+        </AnchorPane>
+        <AnchorPane layoutY="-3.0" prefHeight="570.0" prefWidth="154.0" style="-fx-background-color: #fff;">
+            <effect>
+                <DropShadow />
+            </effect>
+            <children>
+                <ImageView fitHeight="100.0" fitWidth="109.0" layoutX="23.0" layoutY="24.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@img/ph2.png" />
+                    </image>
+                </ImageView>
+                <Text fx:id="numberQuestion" layoutX="59.0" layoutY="281.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="38.0">
+                    <font>
+                        <Font size="14.0" />
+                    </font>
+                </Text>
+                <Text fx:id="textQuestion" layoutX="39.0" layoutY="254.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Question:">
+                    <font>
+                        <Font name="Chalkboard SE Light" size="18.0" />
+                    </font>
+                </Text>
+            </children>
+        </AnchorPane>
+        <Text fx:id="question_text" layoutX="205.0" layoutY="122.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="488.912109375">
+            <font>
+                <Font name="Comic Sans MS" size="12.0" />
+            </font>
+        </Text>
+        <Button fx:id="nextButton" layoutX="369.0" layoutY="473.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="77.0" text="Next">
+            <font>
+                <Font name="Chalkboard SE Light" size="14.0" />
+            </font>
+        </Button>
+        <RadioButton fx:id="radioButton1" layoutX="216.0" layoutY="192.0" mnemonicParsing="false" />
+        <RadioButton fx:id="radioButton2" layoutX="216.0" layoutY="243.0" mnemonicParsing="false" />
+        <RadioButton fx:id="radioButton3" layoutX="216.0" layoutY="292.0" mnemonicParsing="false" />
+        <RadioButton fx:id="radioButton4" layoutX="216.0" layoutY="339.0" mnemonicParsing="false" />
+        <Text fx:id="score" layoutX="295.0" layoutY="432.0" strokeType="OUTSIDE" strokeWidth="0.0" visible="false" wrappingWidth="258.0">
+            <font>
+                <Font size="24.0" />
+            </font>
+        </Text>
+      <Button fx:id="backButton" layoutX="642.0" layoutY="509.0" mnemonicParsing="false" onMouseClicked="#backButtonClick" text="back" visible="false" />
+    </children>
+</AnchorPane>

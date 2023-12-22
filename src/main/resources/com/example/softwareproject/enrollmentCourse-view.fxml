@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="519.0" prefWidth="733.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.softwareproject.EnrollmentCourseController">
+   <children>
+      <HBox prefHeight="45.0" prefWidth="733.0">
+         <children>
+            <Label text="Enrollment course">
+               <font>
+                  <Font name="Arial Bold" size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+      <ScrollPane prefHeight="405.0" prefWidth="723.0">
+         <content>
+            <TableView fx:id="enrollmentTableView" prefHeight="418.0" prefWidth="706.0">
+              <columns>
+                <TableColumn fx:id="courseIdColumn" prefWidth="140.6666568517685" text="course ID" />
+                <TableColumn fx:id="courseNameColumn" prefWidth="151.3333740234375" text="course name" />
+                  <TableColumn fx:id="instructorIdColumn" prefWidth="158.0" text="instructor_id" />
+                  <TableColumn fx:id="creditsColumn" prefWidth="81.99993896484375" text=" credits" />
+                  <TableColumn fx:id="pickButtonColumn" prefWidth="154.666748046875" text="pick" />
+              </columns>
+            </TableView>
+         </content>
+      </ScrollPane>
+      <HBox alignment="BOTTOM_RIGHT" prefHeight="100.0" prefWidth="200.0">
+         <children>
+            <Button mnemonicParsing="false" onMouseClicked="#closeButtonClick" text="close" />
+         </children>
+         <padding>
+            <Insets bottom="15.0" right="15.0" />
+         </padding>
+      </HBox>
+   </children>
+   <padding>
+      <Insets bottom="10.0" left="10.0" top="10.0" />
+   </padding>
+</VBox>
